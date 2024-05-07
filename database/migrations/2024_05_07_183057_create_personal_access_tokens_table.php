@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('servicos', function (Blueprint $table) {
+        Schema::create('muvvins', function (Blueprint $table) {
             $table->id();
             $table->string('nome', 100)->unique()->nullable(false);
             $table->string('descricao', 200)->nullable(false);
