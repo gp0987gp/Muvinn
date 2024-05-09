@@ -32,7 +32,7 @@ class MuvinnFormRequest extends FormRequest
             'banheiros' => 'required|integer',
             'quartos'=> 'required|integer',
             'vagas'=> 'integer',
-            'area_do_imovel'=> 'required|max:100|min:1'
+            'area_do_imovel'=> 'required|max:1000|min:1'
         ];
     }
     public function failedValidation(Validator $validator){

@@ -28,7 +28,7 @@ class MuvinnUpdateFormRequest extends FormRequest
             'cidade' => 'max:100|min:5',
             'endereco' => 'max:100|min:5',
             'tipos_imoveis' => 'max:100|min:5',
-            'preco' => 'decimal 10,2',
+            'preco' => 'decimal: 2',
             'banheiros' => 'integer',
             'quartos'=> 'integer',
             'vagas'=> 'integer',
