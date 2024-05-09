@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\MuvinnFormRequest;
-use App\Http\Requests\MuvinnFormRequestUpdate;
+use App\Http\Requests\MuvinnUpdateFormRequest;
 use App\Models\Muvinn;
 use Illuminate\Http\Request;
 
@@ -14,7 +14,7 @@ class MuvinnController extends Controller
         $muvinn = Muvinn::create([
             'estado' => $request->estado,
             'cidade' => $request->cidade,
-            'endereco' => $request->esndereco,
+            'endereco' => $request->endereco,
             'tipos_imoveis' => $request->tipos_imoveis,
             'preco' => $request->preco,
             'banheiros' => $request->banheiros,
@@ -66,7 +66,7 @@ class MuvinnController extends Controller
             'message' => "Imovel deletado com sucesso"
         ]);
     }
-    public function update(MuvinnFormRequestUpdate $request)
+    public function update(MuvinnUpdateFormRequest $request)
     {
         $muvinn = Muvinn::find($request->id);
 
